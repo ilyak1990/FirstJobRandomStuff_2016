@@ -243,7 +243,7 @@ if (navigator.userAgent.indexOf('gonative') > -1) {
 function errorCallback_highAccuracy(error) {
     if (error.code == error.TIMEOUT)
     {
-        // Attempt to get GPS loc timed out after 5 seconds,
+        /// Attempt to get GPS loc timed out after 5 seconds,
         // try low accuracy location
 
 		msg='LOW ACCURACY ATTEMPT' //attempting to get low accuracy (high accuracy failed)
