@@ -5,20 +5,12 @@ const AWS = require('aws-sdk');
 
 const docClient = new AWS.DynamoDB.DocumentClient({region: "us-east-1"});
 
-
-
-
-
 exports.handler = (event, context, callback) => {
     
-  let custID = parseInt(event.custID);
+let custID = parseInt(event.custID);
 let apiKey = event.apiKey;
 let loginName = event.loginName;
-
-
-
-    
-    var params = {TableName:'customer', Item:{ customerids: custID , apiKey:apiKey , loginName:loginName } }
+var params = {TableName:'customer', Item:{ customerids: custID , apiKey:apiKey , loginName:loginName } }
     
     
   
